@@ -22,5 +22,5 @@ jobs:
           aws ecr get-login-password --region eu-west-1 | docker login --username AWS --password-stdin 244530008913.dkr.ecr.eu-west-1.amazonaws.com
           rev=$(git rev-parse --short HEAD)
           docker build . -t diy-test
-          docker tag toru010/diy-docker 244530008913.dkr.ecr.eu-west-1.amazonaws.com/toru010/diy-docker/latest
-          docker push 244530008913git .dkr.ecr.eu-west-1.amazonaws.com/toru010/diy-docker/latest
+          docker tag toru010/diy-docker 244530008913.dkr.ecr.eu-west-1.amazonaws.com/diy-test/latest
+          docker push 244530008913git .dkr.ecr.eu-west-1.amazonaws.com/diy-test/latest

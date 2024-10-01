@@ -25,4 +25,5 @@ jobs:
           docker build -t toru010/diy-docker .
           docker tag toru010/diy-docker:latest 244530008913.dkr.ecr.eu-west-1.amazonaws.com/toru010/diy-docker:latest
           docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/toru010/diy-docker:latest
+          docker tag toru010/diy-docker trusvik/tullball
           docker push trusvik/diy-toru:tagname

@@ -27,4 +27,4 @@ jobs:
           docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/toru010/diy-docker:latest
           echo "${DOCKER_SECRET_ACCESS_KEY}" | docker login -u "trusvik" --password-stdin
           docker tag toru010/diy-docker trusvik/tullball
-          docker push trusvik/diy-toru:tagname
+          docker push trusvik/diy-docker:latest
